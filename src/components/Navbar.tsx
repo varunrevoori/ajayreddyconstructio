@@ -16,7 +16,7 @@ const Navbar = () => {
           className="cursor-pointer flex items-center gap-3"
         >
           <img
-            src="/pathurilogo.jpeg"
+            src="/pathuri.png"
             alt="Pathuri Infra"
             className="h-10 md:h-12 w-auto object-contain"
           />
