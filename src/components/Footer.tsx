@@ -2,9 +2,16 @@ const Footer = () => {
   return (
     <footer className="py-8 border-t border-border">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="font-body text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Pathuri Infra — Interior and Construction
-        </p>
+        <div className="flex items-center gap-4">
+          <img
+            src="/pathurilogo.jpeg"
+            alt="Pathuri Infra"
+            className="h-10 w-auto object-contain"
+          />
+          <p className="font-body text-xs text-muted-foreground">
+            © {new Date().getFullYear()} Pathuri Infra
+          </p>
+        </div>
         <div className="flex gap-6">
           {["projects", "services", "contact"].map((item) => (
             <button

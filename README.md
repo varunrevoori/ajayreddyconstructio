@@ -1,4 +1,4 @@
-# Ajay Builds Vision
+# Pathuri Infra
 
-Vision Realized.
+Interior and Construction.
 
