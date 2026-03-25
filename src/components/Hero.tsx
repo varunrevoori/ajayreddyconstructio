@@ -24,7 +24,7 @@ const Hero = () => {
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground mb-6">
                 Ajay Reddy
                 <br />
-                <span className="font-normal">Builder & Designer</span>
+<span className="font-normal text-[32px]">Interior Designer & Home Planner</span>
               </h1>
               <p className="font-body text-sm text-muted-foreground max-w-md leading-relaxed mb-8">
                 Crafting thoughtful residential spaces through interior design,
