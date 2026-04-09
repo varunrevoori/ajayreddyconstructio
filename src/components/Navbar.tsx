@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex items-center gap-10">
-          {["projects", "services", "contact"].map((item) => (
+          {['projects', 'services', 'contact'].map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item)}
@@ -46,13 +47,19 @@ const Navbar = () => {
               {item}
             </button>
           ))}
+          <Link
+            to="/estimation"
+            className="font-display text-sm tracking-[0.08em] text-muted-foreground transition-colors duration-200 capitalize hover:text-foreground"
+          >
+            estimation
+          </Link>
         </div>
       </div>
 
       {isMenuOpen && (
         <div className="md:hidden px-6 pb-4">
           <div className="flex flex-col gap-3">
-            {["projects", "services", "contact"].map((item) => (
+            {['projects', 'services', 'contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollTo(item)}
@@ -61,6 +68,13 @@ const Navbar = () => {
                 {item}
               </button>
             ))}
+            <Link
+              to="/estimation"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-left font-display text-sm tracking-[0.08em] text-muted-foreground transition-colors duration-200 capitalize hover:text-foreground"
+            >
+              estimation
+            </Link>
           </div>
         </div>
       )}
