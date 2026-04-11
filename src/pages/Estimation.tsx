@@ -432,9 +432,6 @@ const Estimation = () => {
                     <p className="font-body text-sm text-muted-foreground">
                       {selectedFlat} selected. Total calculated area: {totalArea.toFixed(2)} sq.ft.
                     </p>
-                    <p className="font-body text-xs text-muted-foreground">
-                      TV back panelling amount (width x height x {TV_BACK_PANELLING_RATE}): Rs {tvBackPanellingAmount.toFixed(2)}
-                    </p>
                   </div>
                   <Button className="rounded-sm" onClick={handleSaveAndNext}>Save and Next</Button>
                 </div>
